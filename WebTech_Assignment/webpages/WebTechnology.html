@@ -1,0 +1,80 @@
+<html>
+	<header>
+	<link rel="stylesheet" type="text/css" href="..\myCSS.css">	<!-- You are asked to use external CSS. This is how you link a CSS file. Always place the link in the heading tag. Later on when you might start using javascript, also link the '.js'  folder in the 'header' tag, although it will be a different syntax-->
+		<title>Darshan's website</title>	<!-- This is the text that will appear in the tab of your browser -->
+		<div id="Photo">	<!-- Start of the division tag -->
+			<img id="myPhoto" src="..\Images\HomePage\myPhoto.jpg">	<!-- this is and image tag - place the directory of your image here -->
+			<!-- use the same 'src=' location if you will be using that path, otherwise change it. Don't forget to change the file name that is used-->
+		</div>				<!-- End of the division tag - note the style of the closing tag '</div>' -->
+		<div id="websiteName">
+			<h1>Web Technology</h1>	<!--insert Diploma In IT--> <!-- This is a heading tag - h1 is the biggest heading and h6 is the smallest heading size-->
+		</div>
+		<hr style=" align="center"; width="80%"; "/>	<!-- Horizontal line - I'm just using it to create a 'break' between the elements. This is an example of 'in-line' CSS -->
+	</header>
+	
+	<body>
+		<div class="nav_bar">	<!-- "left_nav"> see external css file if you need an explanation-->
+		<p style="text-align:center;"><b>Modules</b></p>
+			<ul>	<!-- This tag is used for 'Unordered-Lists' (ul). If you want to use Numbered-Lists - use the tag <ol> for 'Ordered-List' items-->
+				<li>	<!-- This is a 'List-Item' tag. It is used to add a new item to the list type that you have created -->
+					<!-- <a> - anchor tag. href - reference/link to other material (seperate webpage in this case). <p> - paragraph tag - insert plain text here (normal text you want to write )-->
+					<a href="\WebTechnology.html"><p>Web Technology</p></a>
+				</li>
+				<li>
+					<a href="ECommerce.html"><p>E-Commerce</p></a>
+				</li>
+				<!-- ***Notice I didn't create all these webpages I don't know if you actually need them. atleast I have given you guidelines for all the tags and formats you need to use to create another webpage through this page***  Remember to change the links used here-->
+				<li>
+					<a href="\ECommerce.html"><p>Programming</p></a>
+				</li>
+				<li>
+					<a href="\ECommerce.html"><p>Networks</p></a>
+				</li>
+			</ul>
+		</div>
+		<div class="nav_bar" style="float:right;">	<!-- Inline CSS overrides external CSS. The class specifies that the element must float to the left, but here we are overriding that specification-->
+			<p style="text-align:center;"><b>Courses</b></p>
+			<ul>	
+				<li>
+					<a href="\WebTechnology.html"><p>BSc In IT</p></a>	<!-- the do before the backslash indicates that the programm must go back in the directory path by one step (folder)) -->
+				</li>
+				<li>
+					<a href="..\index.html"><p>Diploma In IT</p></a>	<!-- This link can remain as it is, as you are asked for this link to always direct you to the main page. if you are going to use this link in other webpages, remember to change the link if needed -->
+				</li>
+				<li>
+					<a href="\ECommerce.html"><p>Higher Certificate</p></a>
+				</li>
+				<li>
+					<a href="\ECommerce.html"><p>Mobile Learning</p></a>
+				</li>
+			</ul>
+		</div>
+		<div id="contentPane">
+			<h2>Web Technology</h2>
+			<p>This is the purpose of the qualification</p>
+			<br/>	<!-- This is a break tag - used to create the equivelant of a 'blank line'. I've used it for neatness sake, so that the text and table that you use do not look too cluttered and untidy -->
+			<table id="tblFirstYearModules">		<!-- This is a 'table' tag (DUH). You cannot set the amount of rows/columns that you want to use, they will be dynamically created according to the content you insert into the table. obvoiusly you will have to do this correctly to get the desired layout. I'll be nice and show you how-->
+			<tr><!-- This is a 'Table-Row' tag it creates a single row in which you may add you r content -->
+				<td><b>First Year Modules</b></td> <!-- This is a 'Table-data' tag. Every time you use this tag, it will add your content into the table row that you  have put this in. It is the equivelant to adding a column in a row every time it is used. Example - if you create a <tr> and use 5x <td> within it, you will have 1xRow with 5xColumns-->	
+			</tr>
+			<tr>
+				<td>Mod 1</td>	<td>Module 1</td>
+			</tr>
+			<tr>
+				<td>Mod 2</td>	<td>Module 2</td>
+			</tr>
+			<tr>
+				<td>Mod 3</td>	<td>Module 3</td>
+			</tr>
+			</table>
+		</div>
+		<br/>
+	</body>
+	<footer id="footer">
+		<p>Chodulaal</p>
+	</footer>
+
+	<!-- <style> /*This is embedded CSS*/
+		/*if you were to use it, you would place everything that you have in the external css file right here*/
+	</style> -->
+</html>

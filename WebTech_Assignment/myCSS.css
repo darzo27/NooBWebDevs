@@ -1,0 +1,50 @@
+#MyPhoto /*this is the way you reference an ID that you use inside any type of html tag. to reference a class - use .className*/
+{
+	float: left;	/*left-aligns the division*/
+	width: 15%;		/*sets the width of the division in relation to the page size, you may also use 'px' (pixels) to set the size of elements. See below*/
+	height: 150px;
+}
+
+#websiteName
+{
+	width: 75%;
+	height: 150px;
+	text-align: center;
+	padding-top: 20px; /*Padding is used to create a 'space' of the size that you specify - here I am manually moving the heading from the top of the page to a position that looks more centered. You could also use 'ertical-align' property but the padding method is easier for me*/
+
+}
+
+/*#left_nav	<!-- I decided that using a class would be easier - see below-->
+{
+	float: left;
+	width: 15%;
+	height: 70%;
+}*/
+
+div.nav_bar	/*This is how you reference a class - the type of tag (div) followed by (.) and the class name (nav_bar)*/
+{
+	float: left;	/*You may remove this and place it in an inline css feature for the element. for the right nav_bar I Have overriden it with in-line css to float to the right*/
+	width: 15%;
+	height: 70%;
+	/*color: white;*/	/*To change the color of the text. The links will not change color - they have different properties and states (I doubt that you need them now)*/
+	background-color: lightgrey;
+}
+
+#contentPane
+{
+	width: 70%;
+	padding-left: 200px;	/*Shifts the content division to be centered (slightly to the right) so that it looks neater and not colliding with the nav_bar*/
+	padding-right: 200px;
+}
+
+#tblFirstYearModules
+{
+	text-align: center;
+	/*padding-left: 100px; Use padding if you want to center this table in the content division*/
+}
+
+#footer
+{
+	clear: both;	/*Pushes the footer to the bottom by not allowing anything to be on it's sides*/
+	text-align: center;
+}

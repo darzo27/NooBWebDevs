@@ -1,0 +1,1 @@
+I've given you a template for your assignment so that you may complete it and easily finish up other pages which you need to do. I have also aided that with a lot of comments at every step and explained every tag so that you can understand what they do, good luck boet.
